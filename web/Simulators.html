@@ -1,0 +1,197 @@
+
+            <!DOCTYPE html>
+            <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">        
+                    <link rel="stylesheet" type="text/css" href="styles.css" />
+                    
+                    <title>Simulators</title>
+                </head>
+                <body>
+                    <ul>
+        <li class=question_content><h4>What is the result of this circuit when run on the <samp>StatevectorSimulator</samp>?<h4><img src=simulators_images/q2.png><ul>
+            <li>
+                <input type="radio" id="2cb9ebc4-ab17-4a7e-a221-af04b17020f9" value="2cb9ebc4-ab17-4a7e-a221-af04b17020f9" name="0" />
+                <label for="2cb9ebc4-ab17-4a7e-a221-af04b17020f9">[0.35355339+0.j, 0.35355339+0.j, 0.35355339+0.j, 0.35355339+0.j, 0.35355339+0.j, 0.35355339+0.j, 0.35355339+0.j, 0.35355339+0.j]</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="c6ce6913-693a-4981-b446-5fb1d63e19b7" value="c6ce6913-693a-4981-b446-5fb1d63e19b7" name="0" />
+                <label for="c6ce6913-693a-4981-b446-5fb1d63e19b7">[0.70710678+0.j, 0.70710678+0.j, 0.70710678+0.j, 0.70710678+0.j, 0.70710678+0.j, 0.70710678+0.j, 0.70710678+0.j, 0.70710678+0.j]</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="bc5dfb0f-0788-4936-b49f-70f0dea7a342" value="bc5dfb0f-0788-4936-b49f-70f0dea7a342" name="0" />
+                <label for="bc5dfb0f-0788-4936-b49f-70f0dea7a342">[0.+0.70710678j, 0.70710678+0.j, 0.+0.70710678j, 0.70710678+0.j, 0.+0.70710678j, 0.70710678+0.j, 0.+0.70710678j, 0.70710678+0.j]</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="a844f528-8289-44a7-bc80-83ad0b47307a" value="a844f528-8289-44a7-bc80-83ad0b47307a" name="0" />
+                <label for="a844f528-8289-44a7-bc80-83ad0b47307a">[0.35355339+0.j, 0.+0.35355339j, 0.35355339+0.j, 0.+0.35355339j, 0.35355339+0.j, 0.+0.35355339j, 0.35355339+0.j, 0.+0.35355339j]</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="312400b4-e306-49e8-ab7d-ff2171555c67" value="312400b4-e306-49e8-ab7d-ff2171555c67" name="0" />
+                <label for="312400b4-e306-49e8-ab7d-ff2171555c67">None of the above</label>
+            </li>
+        </ul></li><li class=question_content><h4>You can also use <samp>Statevector</samp> class in the <samp>quantum_info</samp> module to simulate circuits and obtain state vector.<br />Given the following code, which option produces a different state vector from the rest?<p>import qiskit.quantum_info as qi<br />import numpy as np<br />qc = QuantumCircuit(2)<br />qc.h(0)<br />qc.cx(0, 1)</p></h4><ul>
+            <li>
+                <input type="radio" id="dff7647b-80b5-4cbb-8eb7-cd621e9ca955" value="dff7647b-80b5-4cbb-8eb7-cd621e9ca955" name="1" />
+                <label for="dff7647b-80b5-4cbb-8eb7-cd621e9ca955">qi.Statevector.from_instruction(qc)</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="55f89403-b444-4334-8557-bc7ffadfc37d" value="55f89403-b444-4334-8557-bc7ffadfc37d" name="1" />
+                <label for="55f89403-b444-4334-8557-bc7ffadfc37d">qi.Statevector(np.array([1,0,1,0]) / np.sqrt(2))</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="12dc2036-6096-4584-855a-a0f831380e80" value="12dc2036-6096-4584-855a-a0f831380e80" name="1" />
+                <label for="12dc2036-6096-4584-855a-a0f831380e80">np.sqrt(0.5) * (qi.Statevector.from_label('00') + qi.Statevector.from_label('11'))</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="9d629171-cc2e-45c4-9ee6-1e3f7c47be2d" value="9d629171-cc2e-45c4-9ee6-1e3f7c47be2d" name="1" />
+                <label for="9d629171-cc2e-45c4-9ee6-1e3f7c47be2d">qi.Statevector.from_label('00').evolve(qc)</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="d6b722bc-9acf-4134-b255-9d556f367ede" value="d6b722bc-9acf-4134-b255-9d556f367ede" name="1" />
+                <label for="d6b722bc-9acf-4134-b255-9d556f367ede">None of the above</label>
+            </li>
+        </ul></li><li class=question_content><h4>What is the result of this circuit when run on the <samp>UnitarySimulator</samp>?<h4> <img src=simulators_images/q3.png><ul>
+            <li>
+                <input type="radio" id="8c6d8e4b-6a0c-4c05-bf5c-37b7fa44a4fe" value="8c6d8e4b-6a0c-4c05-bf5c-37b7fa44a4fe" name="2" />
+                <label for="8c6d8e4b-6a0c-4c05-bf5c-37b7fa44a4fe">[[ 0.+0.j, 0.+0.j, 0.+0.j, 1.+0.j ], [ 0.+0.j, 0.+0.j -1.+0.j, 0.+0.j ], [ 0.+0.j, 1.+0.j, 0.+0.j, 0.+0.j ], [-1.+0.j, 0.+0.j, 0.+0.j, 0.+0.j ]]</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="181084e8-71a9-4ee2-846e-605b9579775c" value="181084e8-71a9-4ee2-846e-605b9579775c" name="2" />
+                <label for="181084e8-71a9-4ee2-846e-605b9579775c">[[ 0.+0.j, 1.+0.j, 0.+0.j, 0.+0.j ], [ 0.+0.j, 0.+0.j -1.+0.j, 0.+0.j ], [ 0.+0.j, 0.+0.j, 0.+0.j, 1.+0.j ], [-1.+0.j, 0.+0.j, 0.+0.j, 0.+0.j ]]</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="ebc79fc7-23c4-4b05-bdad-f4b496fa27b2" value="ebc79fc7-23c4-4b05-bdad-f4b496fa27b2" name="2" />
+                <label for="ebc79fc7-23c4-4b05-bdad-f4b496fa27b2">[[ 0.+0.j, 0.+0.j -1.+0.j, 0.+0.j ], [ 0.+0.j, 1.+0.j, 0.+0.j, 0.+0.j ], [ 0.+0.j, 0.+0.j, 0.+0.j, 1.+0.j ], [-1.+0.j, 0.+0.j, 0.+0.j, 0.+0.j ]]</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="260a0f19-d728-4451-b789-3d4cd5ecfae6" value="260a0f19-d728-4451-b789-3d4cd5ecfae6" name="2" />
+                <label for="260a0f19-d728-4451-b789-3d4cd5ecfae6">[[ 0.+0.j, 0.+0.j -1.+0.j, 0.+0.j ], [ 0.+0.j, 1.+0.j, 0.+0.j, 0.+0.j ], [ 0.+0.j, 0.+0.j, 0.+0.j, 1.+0.j ], [ -1.+0.j, 0.+0.j, 0.+0.j, 0.+0.j ]]</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="3a76031a-6321-4055-8f80-8f8db70340a4" value="3a76031a-6321-4055-8f80-8f8db70340a4" name="2" />
+                <label for="3a76031a-6321-4055-8f80-8f8db70340a4">None of the above</label>
+            </li>
+        </ul></li><li class=question_content><h4>You can also use <samp>Operator</samp> class in the <samp>quantum_info</samp> module to simulate circuits and obtain unitary.<br />Given the following code, which option produces a different unitary from the rest?<p>import qiskit.quantum_info as qi<br />qc = QuantumCircuit(2)<br />qc.h(0)<br />qc.cx(0, 1)<br /></p></h4><ul>
+            <li>
+                <input type="radio" id="7a0e38fd-3b33-408e-93da-5c2df11a382a" value="7a0e38fd-3b33-408e-93da-5c2df11a382a" name="3" />
+                <label for="7a0e38fd-3b33-408e-93da-5c2df11a382a">qi.Operator(qc)</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="71cf85c7-acd3-42b8-840d-713d3ec9a94d" value="71cf85c7-acd3-42b8-840d-713d3ec9a94d" name="3" />
+                <label for="71cf85c7-acd3-42b8-840d-713d3ec9a94d">qi.Operator.from_label('II').compose(HGate(), [0]).compose(CXGate(),[0,1])</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="2e13d2f1-9acf-476c-b25d-c95203bbbe49" value="2e13d2f1-9acf-476c-b25d-c95203bbbe49" name="3" />
+                <label for="2e13d2f1-9acf-476c-b25d-c95203bbbe49">qi.Operator.from_label('HI') + qi.Operator.from_label('CX')</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="f9a5a853-8dfc-4cd6-8938-5b40805ae6f4" value="f9a5a853-8dfc-4cd6-8938-5b40805ae6f4" name="3" />
+                <label for="f9a5a853-8dfc-4cd6-8938-5b40805ae6f4">qi.Operator.from_label('II').compose(qc)</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="db94436b-f864-40e6-a2ae-56b2cfca7709" value="db94436b-f864-40e6-a2ae-56b2cfca7709" name="3" />
+                <label for="db94436b-f864-40e6-a2ae-56b2cfca7709">None of the above</label>
+            </li>
+        </ul></li><li class=question_content><h4>Which of the following histograms could be the result of this circuit when run on <samp>QasmSimulator</samp>?</h4> <img src=simulators_images/q1.png><ul>
+            <li>
+                <input type="radio" id="557c3194-7703-4de5-befb-40b29a1eb8ef" value="557c3194-7703-4de5-befb-40b29a1eb8ef" name="4" />
+                <label for="557c3194-7703-4de5-befb-40b29a1eb8ef"><img src=simulators_images/1_w1.png ></label>
+            </li>
+        
+            <li>
+                <input type="radio" id="5ece3bcc-2cee-4b38-80c0-616610c215b5" value="5ece3bcc-2cee-4b38-80c0-616610c215b5" name="4" />
+                <label for="5ece3bcc-2cee-4b38-80c0-616610c215b5"><img src=simulators_images/1_w2.png ></label>
+            </li>
+        
+            <li>
+                <input type="radio" id="3fe48878-3b39-4696-a0ea-9972ffa2b5cd" value="3fe48878-3b39-4696-a0ea-9972ffa2b5cd" name="4" />
+                <label for="3fe48878-3b39-4696-a0ea-9972ffa2b5cd"><img src=simulators_images/1_w3.png ></label>
+            </li>
+        
+            <li>
+                <input type="radio" id="7da2737e-b910-490d-b7d9-5c2f1d02c97d" value="7da2737e-b910-490d-b7d9-5c2f1d02c97d" name="4" />
+                <label for="7da2737e-b910-490d-b7d9-5c2f1d02c97d"><img src=simulators_images/1_w4.png ></label>
+            </li>
+        
+            <li>
+                <input type="radio" id="205da0f3-be21-4301-8191-66d61fb0bad0" value="205da0f3-be21-4301-8191-66d61fb0bad0" name="4" />
+                <label for="205da0f3-be21-4301-8191-66d61fb0bad0">None of the above</label>
+            </li>
+        </ul></li><li class=question_content><h4>Which of these configuration options could result in the following result object/counts?<h4> <p>qc = QuantumCircuit(2)<br />qc.h([0, 1])<br />qc.measure_all()<br />result = <span style='color:red;'>execute(*what goes in here?*)</span>.result()<br />memory = result.get_memory(qc)<br />print(memory)<br /><br />> ['01', '10', '00', '11', '00', '10', '00', '01', '00', '11', '11', '11', '11',' 11',' 11']</p><ul>
+            <li>
+                <input type="radio" id="9099a030-220f-4b6d-ba67-cc07c0064889" value="9099a030-220f-4b6d-ba67-cc07c0064889" name="5" />
+                <label for="9099a030-220f-4b6d-ba67-cc07c0064889">execute(qc, StatevectorSimulator(), shots=15, memory=True)</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="ec8de705-a13c-4de2-a162-5c4c576477e1" value="ec8de705-a13c-4de2-a162-5c4c576477e1" name="5" />
+                <label for="ec8de705-a13c-4de2-a162-5c4c576477e1">execute(qc, QasmSimulator(), shots=10, memory=True)</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="fcf9df78-56f0-40ab-8e66-94a721ff3e71" value="fcf9df78-56f0-40ab-8e66-94a721ff3e71" name="5" />
+                <label for="fcf9df78-56f0-40ab-8e66-94a721ff3e71">execute(qc, QasmSimulator(), shots=15, memory=True)</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="f0712984-a4c4-4002-a76e-6a7fd194e05d" value="f0712984-a4c4-4002-a76e-6a7fd194e05d" name="5" />
+                <label for="f0712984-a4c4-4002-a76e-6a7fd194e05d">execute(qc, QasmSimulator(), shots=15, memory=False)</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="0421492b-e0f1-4f83-bd92-c0f4ef5ec9b1" value="0421492b-e0f1-4f83-bd92-c0f4ef5ec9b1" name="5" />
+                <label for="0421492b-e0f1-4f83-bd92-c0f4ef5ec9b1">None of the above</label>
+            </li>
+        </ul></li><li class=question_content><h4>Clifford circuits can be efficiently simulated classically in Qiskit using <samp>Clifford</samp> class in the <samp>quantum_info</samp> module. <br />Which of the following is not a Clifford gate?</h4><ul>
+            <li>
+                <input type="radio" id="8c314f98-1553-4f7f-850e-6c08934bfebe" value="8c314f98-1553-4f7f-850e-6c08934bfebe" name="6" />
+                <label for="8c314f98-1553-4f7f-850e-6c08934bfebe">XGate</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="0636a50e-04c4-4f74-a56e-c90967a88f0f" value="0636a50e-04c4-4f74-a56e-c90967a88f0f" name="6" />
+                <label for="0636a50e-04c4-4f74-a56e-c90967a88f0f">SdgGate</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="1919a118-5685-46bc-86e3-da01cea3f2b9" value="1919a118-5685-46bc-86e3-da01cea3f2b9" name="6" />
+                <label for="1919a118-5685-46bc-86e3-da01cea3f2b9">CXGate</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="126c76df-b497-454d-9466-85c5ef9877d7" value="126c76df-b497-454d-9466-85c5ef9877d7" name="6" />
+                <label for="126c76df-b497-454d-9466-85c5ef9877d7">RZGate</label>
+            </li>
+        
+            <li>
+                <input type="radio" id="527054b5-cba1-4177-bf3c-4f9e843b841d" value="527054b5-cba1-4177-bf3c-4f9e843b841d" name="6" />
+                <label for="527054b5-cba1-4177-bf3c-4f9e843b841d">None of the above</label>
+            </li>
+        </ul></li>
+            </ul>
+            </body>
+            </html>
+        
