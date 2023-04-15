@@ -14,6 +14,7 @@ class Form:
     def create_questions_page(self, page_title, output_file_path):
         self.create_page_headers(page_title)
         self.add_questions_to_page()
+        self.add_answers(encode_page_title(page_title))
         self.close_page()
         self.save_file(output_file_path)
 
@@ -46,6 +47,7 @@ class Form:
             question_answers = question["options"]
             self.add_question_content(question_content)
             self.add_question_answers(question_index, question_answers)
+        self.close_questions_list()
 
     def add_question_content(self, question_content):
         self.final_html_page += f"<li class=question_content>{question_content}"
@@ -64,10 +66,26 @@ class Form:
                 <label for="{answer_id}">{answer}</label>
             </li>
         """
-    
+
+    def close_questions_list(self):
+        self.final_html_page += "</ul>"
+
+    def add_answers(self, encoded_title):
+        answers = self.get_questions_data(encoded_title)
+        self.final_html_page += f"<pre>{answers}</pre>"
+
+    def get_questions_data(self, encoded_title):
+        file = self.get_question_data_filename(encoded_title)
+
+        with open(file, "r") as questions_file:
+            return questions_file.read()
+
+
+    def get_question_data_filename(self, encoded_title):
+        return encoded_title + '.txt'
+
     def close_page(self):
         self.final_html_page += """
-            </ul>
             </body>
             </html>
         """
@@ -83,7 +101,8 @@ def get_questions_files_paths():
     return json_files
 
     
-
+def encode_page_title(title):
+    return title.lower().replace(" ", "_")
 
 def get_page_title(filename):
     return filename.replace(".json", '').replace('_', ' ').capitalize()

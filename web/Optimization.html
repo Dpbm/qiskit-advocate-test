@@ -17,81 +17,83 @@
                     <ul>
         <li class=question_content><h4>Which of the following statement is incorrect for this <samp>QuadraticProgram</samp>?<br /><br /><p>mod = QuadraticProgram()<br />mod.binary_var('x')<br />mod.binary_var('y')<br />mod.minimize(constant = 3, linear=[1,-2], quadratic={('x', 'y'): 2})<br /></p></h4><ul>
             <li>
-                <input type="radio" id="abf67ad7-6676-4c18-984e-211b4ecfd38b" value="abf67ad7-6676-4c18-984e-211b4ecfd38b" name="0" />
-                <label for="abf67ad7-6676-4c18-984e-211b4ecfd38b">It has two variables</label>
+                <input type="radio" id="a7ede790-c6c6-4966-8b2e-9fa1503f1d7c" value="a7ede790-c6c6-4966-8b2e-9fa1503f1d7c" name="0" />
+                <label for="a7ede790-c6c6-4966-8b2e-9fa1503f1d7c">It has two variables</label>
             </li>
         
             <li>
-                <input type="radio" id="0e20ae5d-8645-431c-9e54-24d3c665b1b0" value="0e20ae5d-8645-431c-9e54-24d3c665b1b0" name="0" />
-                <label for="0e20ae5d-8645-431c-9e54-24d3c665b1b0">The objective is to minimise x - 2 y + 2 x^2 + 2 y^2 + 3</label>
+                <input type="radio" id="b7e20be4-1f76-4378-81e5-2d60f0329d3a" value="b7e20be4-1f76-4378-81e5-2d60f0329d3a" name="0" />
+                <label for="b7e20be4-1f76-4378-81e5-2d60f0329d3a">The objective is to minimise x - 2 y + 2 x^2 + 2 y^2 + 3</label>
             </li>
         
             <li>
-                <input type="radio" id="51ab5b78-053a-4a80-96e7-1126d9d58ec3" value="51ab5b78-053a-4a80-96e7-1126d9d58ec3" name="0" />
-                <label for="51ab5b78-053a-4a80-96e7-1126d9d58ec3">It has no constraints</label>
+                <input type="radio" id="cd51b829-8076-4f38-9b08-aed602331935" value="cd51b829-8076-4f38-9b08-aed602331935" name="0" />
+                <label for="cd51b829-8076-4f38-9b08-aed602331935">It has no constraints</label>
             </li>
         
             <li>
-                <input type="radio" id="ea49730a-94e9-40c2-a94b-bf090a82497b" value="ea49730a-94e9-40c2-a94b-bf090a82497b" name="0" />
-                <label for="ea49730a-94e9-40c2-a94b-bf090a82497b">It is a Quadratic Unconstrained Binary Optimization (QUBO) problem</label>
+                <input type="radio" id="f197afbf-19e0-45f9-9539-6c8653190453" value="f197afbf-19e0-45f9-9539-6c8653190453" name="0" />
+                <label for="f197afbf-19e0-45f9-9539-6c8653190453">It is a Quadratic Unconstrained Binary Optimization (QUBO) problem</label>
             </li>
         
             <li>
-                <input type="radio" id="b7f91043-7100-4bdf-9c45-21b1a850716a" value="b7f91043-7100-4bdf-9c45-21b1a850716a" name="0" />
-                <label for="b7f91043-7100-4bdf-9c45-21b1a850716a">None of the above</label>
+                <input type="radio" id="95d72639-7e80-49a6-a2fd-634e5bc41d66" value="95d72639-7e80-49a6-a2fd-634e5bc41d66" name="0" />
+                <label for="95d72639-7e80-49a6-a2fd-634e5bc41d66">None of the above</label>
             </li>
         </ul></li><li class=question_content><h4>What kinds of minimum eigen solvers can be used for the <samp>MinimumEigenOptimizer</samp>?<br /><br /><p>problem = QuadraticProgram()<br /># specify problem here<br /># specify minimum eigen solver to be used<br />mes = <span style='color:red;'>(*what can be here?*)</span><br />optimizer = MinimumEigenOptimizer(mes)<br />result = optimizer.solve(problem)<br /></p></h4><ul>
             <li>
-                <input type="radio" id="e79d9823-8f1f-46f0-af86-5411dbcc3551" value="e79d9823-8f1f-46f0-af86-5411dbcc3551" name="1" />
-                <label for="e79d9823-8f1f-46f0-af86-5411dbcc3551"><pre>VQE(...)</pre></label>
+                <input type="radio" id="dc93b456-bc77-48ef-8472-bd229baf01aa" value="dc93b456-bc77-48ef-8472-bd229baf01aa" name="1" />
+                <label for="dc93b456-bc77-48ef-8472-bd229baf01aa"><pre>VQE(...)</pre></label>
             </li>
         
             <li>
-                <input type="radio" id="98d8a705-8d9a-4f45-97c1-de1697f91a38" value="98d8a705-8d9a-4f45-97c1-de1697f91a38" name="1" />
-                <label for="98d8a705-8d9a-4f45-97c1-de1697f91a38"><pre>QAOA(...)</pre></label>
+                <input type="radio" id="a759b7cf-4cb3-4c4a-85a0-f28fe7d5cf02" value="a759b7cf-4cb3-4c4a-85a0-f28fe7d5cf02" name="1" />
+                <label for="a759b7cf-4cb3-4c4a-85a0-f28fe7d5cf02"><pre>QAOA(...)</pre></label>
             </li>
         
             <li>
-                <input type="radio" id="a1d53ab7-4197-47e9-9bdd-b9574bb0f5a7" value="a1d53ab7-4197-47e9-9bdd-b9574bb0f5a7" name="1" />
-                <label for="a1d53ab7-4197-47e9-9bdd-b9574bb0f5a7"><pre>NumpyMinimumEigensolver(...)</pre></label>
+                <input type="radio" id="d504373c-825f-497e-9d11-591e6d4e8694" value="d504373c-825f-497e-9d11-591e6d4e8694" name="1" />
+                <label for="d504373c-825f-497e-9d11-591e6d4e8694"><pre>NumpyMinimumEigensolver(...)</pre></label>
             </li>
         
             <li>
-                <input type="radio" id="94caf561-11aa-486e-8a6a-8f2cf4843d0d" value="94caf561-11aa-486e-8a6a-8f2cf4843d0d" name="1" />
-                <label for="94caf561-11aa-486e-8a6a-8f2cf4843d0d">All of the above</label>
+                <input type="radio" id="46e71a96-2c2b-4188-a226-bef62c8e851c" value="46e71a96-2c2b-4188-a226-bef62c8e851c" name="1" />
+                <label for="46e71a96-2c2b-4188-a226-bef62c8e851c">All of the above</label>
             </li>
         
             <li>
-                <input type="radio" id="777314e5-948d-4692-8d1e-4c010d3ce1c5" value="777314e5-948d-4692-8d1e-4c010d3ce1c5" name="1" />
-                <label for="777314e5-948d-4692-8d1e-4c010d3ce1c5">None of the above</label>
+                <input type="radio" id="c2f65de6-a468-4635-8a42-9fdfd645872c" value="c2f65de6-a468-4635-8a42-9fdfd645872c" name="1" />
+                <label for="c2f65de6-a468-4635-8a42-9fdfd645872c">None of the above</label>
             </li>
         </ul></li><li class=question_content><h4>Which optimizers in Qiskit can be used to solve Quadratic Unconstrained Binary Optimization (QUBO) problems?</h4><ul>
             <li>
-                <input type="radio" id="62fb1ca6-b6d2-4c80-b133-bdfdc432ebf9" value="62fb1ca6-b6d2-4c80-b133-bdfdc432ebf9" name="2" />
-                <label for="62fb1ca6-b6d2-4c80-b133-bdfdc432ebf9"><pre>MinimumEigenOptimizer</pre></label>
+                <input type="radio" id="4cda17ed-0672-477e-b295-d6869ce92dcf" value="4cda17ed-0672-477e-b295-d6869ce92dcf" name="2" />
+                <label for="4cda17ed-0672-477e-b295-d6869ce92dcf"><pre>MinimumEigenOptimizer</pre></label>
             </li>
         
             <li>
-                <input type="radio" id="3341c459-4869-495c-8e64-91dc74461528" value="3341c459-4869-495c-8e64-91dc74461528" name="2" />
-                <label for="3341c459-4869-495c-8e64-91dc74461528"><pre>GroverOptimizer</pre></label>
+                <input type="radio" id="dd67c8eb-f323-436c-aabe-2591b0c508ec" value="dd67c8eb-f323-436c-aabe-2591b0c508ec" name="2" />
+                <label for="dd67c8eb-f323-436c-aabe-2591b0c508ec"><pre>GroverOptimizer</pre></label>
             </li>
         
             <li>
-                <input type="radio" id="07e35c23-a667-4bf1-9c43-f70be0719678" value="07e35c23-a667-4bf1-9c43-f70be0719678" name="2" />
-                <label for="07e35c23-a667-4bf1-9c43-f70be0719678"><pre>CobylaOptimizer</pre></label>
+                <input type="radio" id="7c99941d-7c32-46a5-80a7-7c5931f7e27c" value="7c99941d-7c32-46a5-80a7-7c5931f7e27c" name="2" />
+                <label for="7c99941d-7c32-46a5-80a7-7c5931f7e27c"><pre>CobylaOptimizer</pre></label>
             </li>
         
             <li>
-                <input type="radio" id="437ab2ec-abb3-4a96-a1ae-907de118b56f" value="437ab2ec-abb3-4a96-a1ae-907de118b56f" name="2" />
-                <label for="437ab2ec-abb3-4a96-a1ae-907de118b56f">Both 1 & 2</label>
+                <input type="radio" id="4ff580ba-3b2c-4b26-9531-b8b8b428653e" value="4ff580ba-3b2c-4b26-9531-b8b8b428653e" name="2" />
+                <label for="4ff580ba-3b2c-4b26-9531-b8b8b428653e">Both 1 & 2</label>
             </li>
         
             <li>
-                <input type="radio" id="5326f426-7a95-49c5-8426-3b9458fd895f" value="5326f426-7a95-49c5-8426-3b9458fd895f" name="2" />
-                <label for="5326f426-7a95-49c5-8426-3b9458fd895f">All of the above</label>
+                <input type="radio" id="bbdd0817-4a1a-4489-a6f5-f988e3b2d8a2" value="bbdd0817-4a1a-4489-a6f5-f988e3b2d8a2" name="2" />
+                <label for="bbdd0817-4a1a-4489-a6f5-f988e3b2d8a2">All of the above</label>
             </li>
-        </ul></li>
-            </ul>
+        </ul></li></ul><pre>Q1 - 2
+Q2 - 4
+Q3 - 4
+</pre>
             </body>
             </html>
         
